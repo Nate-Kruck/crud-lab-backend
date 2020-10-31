@@ -5,6 +5,9 @@ const app = require('../lib/app');
 
 describe('crud-lab-be routes', () => {
   beforeEach(() => {
-    return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'))
+    return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'));
+  });
+  it('dummy test', () => {
+    expect(true).toEqual(true);
   });
 });
